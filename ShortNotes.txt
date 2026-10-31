@@ -1,7 +1,7 @@
 Testbench  - EXECUTES ONCE
 
 inputs gets in reg in testbench.
-Wires in RTL are diffrent.
+Wires in RTL are different.
 
 initial (executes only once) and always (excutes always).
 
