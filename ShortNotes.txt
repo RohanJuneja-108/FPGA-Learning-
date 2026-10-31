@@ -1,0 +1,57 @@
+Testbench  - EXECUTES ONCE
+
+inputs gets in reg in testbench.
+Wires in RTL are diffrent.
+
+initial (executes only once) and always (excutes always).
+
+DUT AND UUT
+UUT stands for Unit Under Test (sometimes called DUT for Device Under Test)
+
+initial
+//Procedural block
+begin
+
+#finish
+end
+
+
+Half Adder: sum and carry s = ab'+ a'b
+c = a&b
+
+display - printf
+monitor - single time command excuted once and if value of input is changed the value is diplayed.
+
+$finish - marks end
+$dumpfile - .vcd (value change dump) (values)
+$dumpvars (variable)
+"C:\Users\aarushi.DESKTOP-EV4U7BF\Desktop\ALU\top_tb.v"
+
+reg
+wire
+
+
+gtkwave wave.vcd
+
+DEPLOYMENT
+yosys -p "read_verilog top.v; synth_ice40 -top top -noabc -json top.json
+
+
+io.pcf file assigns pins (mapping)
+
+nextpnr-ice40 --up5k --package sg48 --json top.json --pcf io.pcf --asc top.asc
+
+pcf - pin constraint file
+assign pins on board
+
+icepack top.asc top.bin
+Converts into Human readable ASCII layout configuration  file in to a binary bit stream (bin).
+
+iceprog - flashes binary stream (bin file)  to the display.
+
+FTBIBUS
+LIBUSB
+WinUSB
+
+iceprog -t
+recognize chip
