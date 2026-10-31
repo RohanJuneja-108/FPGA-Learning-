@@ -1,0 +1,57 @@
+$date
+	Fri Oct 30 18:21:04 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb $end
+$var wire 1 ! zero $end
+$var wire 8 " y [7:0] $end
+$var wire 1 # carry $end
+$var reg 2 $ op [1:0] $end
+$scope module uut $end
+$var wire 8 % a [7:0] $end
+$var wire 8 & b [7:0] $end
+$var wire 2 ' op [1:0] $end
+$var reg 1 # carry $end
+$var reg 9 ( temp [8:0] $end
+$var reg 8 ) y [7:0] $end
+$var reg 1 ! zero $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1111 )
+b1111 (
+b0 '
+b101 &
+b1010 %
+b0 $
+0#
+b1111 "
+0!
+$end
+#10
+b0 (
+b1111 "
+b1111 )
+b1 $
+b1 '
+#20
+b101 "
+b101 )
+b10 $
+b10 '
+#30
+b101 "
+b101 )
+b11 $
+b11 '
+#40
